@@ -5,6 +5,7 @@ Expose all usable time-series imputation models.
 # Created by Wenjie Du <wenjay.du@gmail.com>
 # License: BSD-3-Clause
 
+from .aihn import AIHN, DatasetMainFrequencyBased #Todo: remove the dataset
 from .brits import BRITS
 from .csai import CSAI
 from .csdi import CSDI
@@ -48,6 +49,8 @@ from .tefn import TEFN
 
 __all__ = [
     # neural network imputation methods
+    "DatasetMainFrequencyBased", #Todo: delete this line
+    "AIHN",
     "SAITS",
     "Transformer",
     "iTransformer",
